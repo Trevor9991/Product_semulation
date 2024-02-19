@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 235, 227);
+}
+.card {
+  width: 600px;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+}
+.card .image {
+  width: 50%;
+  height: 100%;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card .data {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 30px;
+}
+.card .data h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: rgb(108, 114, 137);
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+.card .data h1 {
+  text-transform: capitalize;
+  font-family: "Fraunces", serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: hsl(212, 21%, 14%);
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.card .data p {
+  color: rgb(108, 114, 137);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.card .data .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card .data .price .new-price {
+  color: rgb(60, 128, 103);
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.card .data .price .old-price {
+  color: rgb(108, 114, 137);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.card .data a {
+  background-color: rgb(60, 128, 103);
+  border: 1px solid rgb(60, 128, 103);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.card .data a:hover {
+  background-color: white;
+  color: rgb(60, 128, 103);
+  border: 1px solid rgb(60, 128, 103);
+}
+.card .data a:hover i {
+  color: rgb(60, 128, 103);
+}
+.card .data a i {
+  font-size: 14px;
+  color: white;
+  margin-right: 5px;
+  transition: all 0.5s;
+}
+#buy-now {
+  background-color: rgb(53, 183, 135);
+  border: 1px solid rgb(53, 183, 135);
+}
+#buy-now:hover {
+  background-color: white;
+  color: rgb(60, 128, 103);
+}
+
+/* sign in page style */
+.container {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgb(60, 128, 103, 0.5);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(60, 128, 103);
+}
+.container h1 {
+  text-align: center;
+  margin: 30px;
+}
+form {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 13px;
+}
+.container form input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(53, 183, 135);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+}
+.container form #continue-btn {
+  height: 40px;
+  color: white;
+  background-color: rgb(60, 128, 103);
+  box-shadow: 5px 5px 10px rgb(60, 128, 103);
+  cursor: pointer;
+}
